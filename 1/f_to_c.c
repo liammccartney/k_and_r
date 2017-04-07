@@ -10,6 +10,6 @@ int main()
     float fahr;
     
     printf("Fahrenheit -- Celsius\n");
-    for(fahr = LOWER; fahr <= UPPER; fahr = fahr + STEP)
+    for(fahr = UPPER; fahr >= LOWER; fahr = fahr - STEP)
         printf("%10.0f %10.1f\n", fahr, (5.0 / 9.0) * (fahr - 32.0));
 }
